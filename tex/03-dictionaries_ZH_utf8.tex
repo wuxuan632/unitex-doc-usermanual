@@ -4,13 +4,13 @@
 \section{DELA词典}
 \index{DELA}\index{Dictionnaire!format}\index{LADL}
 
-Unitex所使用的电子词典使用DELA形式（LADL电子词典）。这种形式能描述用户输入的某种语言的简单或复合的词目，\index{Entrée lexicale}语法上的任意搭配，词义及词形变化。电子词典共有两种类型。第一种更加常用的带有变位形式的字典，叫做 DELAF（DELA的变位形式）或 DELACF，它是针对复合词的字典。第二类型的字典叫做 DELAS（DELA简单形式）或DELAC。Unitex的项目并不区分简单形式和复合形式的字典。我们使用 DELAF 和 DELAS 两种词典，来表示其中词条为单词、词组的或复合词的的词目。 
+Unitex 所使用的电子词典使用\ DELA 形式（LADL 电子词典）。这种形式能描述用户输入的某种语言的简单或复合的词目，\index{Entrée lexicale}语法上的任意搭配，词义及词形变化。电子词典共有两种类型。第一种更加常用的带有变位形式的字典，叫做\ DELAF（DELA 的变位形式）或\ DELACF，它是针对复合词的字典。第二类型的字典叫做\ DELAS（DELA简单形式）或\ DELAC。Unitex  的项目并不区分简单形式和复合形式的字典。我们使用\ DELAF 和\ DELAS 两种词典，来表示其中词条为单词、词组的或复合词的的词目。 
 
-\subsection{DELAF的形式}
+\subsection{DELAF 的形式}
 \label{section-DELAF-format}
 \subsubsection{输入的语法}
 \label{section-DELAF-entry-syntax}
-一个DELAF的输入就是一行以回车结束的文本，它符合以下的规则：
+一个\ DELAF 的输入就是一行以回车结束的文本，它符合以下的规则：
 
 \bigskip
 \begin{verbatim}
@@ -35,17 +35,17 @@ mercantiles,mercantile.A+z1:mp:fp/ceci est un exemple
 \index{\verb+,+}
   
 \bigskip \item \verb$A+z1$ 是该词目的语法和词义信息。，
-\index{Informations!grammaticales}\index{Informations!sémantiques} 在我们的例子中 \verb+A+
-表示形容词， \verb+z1+ 代表当前词 (见表 ~\ref{tab-semantic-codes}).
+\index{Informations!grammaticales}\index{Informations!sémantiques} 在我们的例子中\ \verb+A+
+表示形容词， \verb+z1+ 代表当前词 (见表\ ~\ref{tab-semantic-codes}).
 
 每一条词目都至少有一条语法或语义代码，用句号和标准形式隔开。如果有许多条信息，互相之间用加号隔开。 \verb$+$\index{\verb$+$}\index{\verb+.+}.
   
 \bigskip
 \item \verb+:mp:fp+ 是词形变化码。
 \index{Informations!flexionnelles} 它描述了该词目的种类，数量，时态和语态，变化形式等。这些信息不是必须的，一条词目可包含一条或多条变化信息，互相之间用冒号隔开。在我们的例子中， \verb+m+ 表示阳性，
-\verb+p+ 表示复数 \verb+f+ 表示阴性 (见表 ~\ref{tab-inflectional-codes}). 字符 \verb+:+ 可理解为“或”。 如\verb+:mp:fp+ 代表“阳性复数”或“阴性复数”。 C因为每一个字母代表一条信息，没有必要重复使用相同的字母。如：用\verb+:PP+ 表示过去分词完全等于用 \verb+:P+ 单独表示;\index{\verb+:+}
+\verb+p+ 表示复数 \verb+f+ 表示阴性 (见表\ ~\ref{tab-inflectional-codes}). 字符\ \verb+:+ 可理解为“或”。 如\ \verb+:mp:fp+ 代表“阳性复数”或“阴性复数”。 C 因为每一个字母代表一条信息，没有必要重复使用相同的字母。如：用\ \verb+:PP+ 表示过去分词完全等于用\ \verb+:P+ 单独表示;\index{\verb+:+}
   
-\bigskip \item \verb+/是一条注释。注释不是必须的，它可以用 \verb+/+来表示。当人们精简字典时注释将被删除。\index{Commentaire!dans un dictionnaire} \index{Dictionnaire!commentaire}\index{\verb+/+}
+\bigskip \item \verb+/ 是一条注释。注释不是必须的，它可以用\ \verb+/+ 来表示。当人们精简字典时注释将被删除。\index{Commentaire!dans un dictionnaire} \index{Dictionnaire!commentaire}\index{\verb+/+}
 \end{itemize}
 
 \bigskip
@@ -67,11 +67,11 @@ Organisation des Nations Unies,O\.N\.U\..SIGLE
 gît,gésir.V+z1:P3s /voir ci-gît
 \end{verbatim}
 
-\bigskip \noindent 字符前的空格 \verb+/+被看做词形变化码，词形变化码包含四个字符 \verb+P+, \verb+3+, \verb+s+ 和一个空格符。
+\bigskip \noindent 字符前的空格\ \verb+/+ 被看做词形变化码，词形变化码包含四个字符\ \verb+P+, \verb+3+, \verb+s+ 和一个空格符。
 
 
-\bigskip \noindent 可以在词典 DELAF 或 DELAS中输入
-,用 $/$来表示行。例如，
+\bigskip \noindent 可以在词典\ DELAF 或\ DELAS 中输入
+,用\ $/$来 表示行。例如，
 
 \bigskip
 \begin{verbatim}
@@ -84,9 +84,9 @@ par,.N+z3:ms
 
 \index{Mots!composés!avec espace ou tiret}\index{\verb+=+}\index{\verb+\=+}
 
-某些复合词如 \textit{grand-mère}可以用空格或破折号来写。为了避免重复的条目，可以使用\verb+=+ . 在当字典被压缩时，程序\verb+Compress+
+某些复合词如\ \textit{grand-mère} 可以用空格或破折号来写。为了避免重复的条目，可以使用\\verb+=+ . 在当字典被压缩时，程序\ \verb+Compress+
 \index{Programmes externes!\verb+Compress+}\index{\verb+Compress+} 检查每一行。
-如果在词尾变化形式或规范形式包含了非转义字符 \verb+=+。 如果是这种情况，该程序由两个条目替换本：一种其中=字符由一个空取代，和一个在那里由破折号取代。因此，下面的条目：
+如果在词尾变化形式或规范形式包含了非转义字符\ \verb+=+。 如果是这种情况，该程序由两个条目替换本：一种其中\ = 字符由一个空取代，和一个在那里由破折号取代。因此，下面的条目：
 
 
 \bigskip \verb$grand=mères,grand=mère.N:fp$
@@ -101,13 +101,13 @@ par,.N+z3:ms
 
 
 \bigskip
-\noindent 注：如果您想保留包含\verb+=+字符的条目，使用\verb+\+ ，如下面的例子：
+\noindent 注：如果您想保留包含\ \verb+=+ 字符的条目，使用\ \verb+\+ ，如下面的例子：
 
 
 \bigskip
 \verb$E\=mc2,.FORMULE$\\
 
-当字典被压缩，本次置换完成。在压缩字典中，转义字符 \verb+=+ 被简单 的 \verb+=+替换。
+当字典被压缩，本次置换完成。在压缩字典中，转义字符\ \verb+=+ 被简单 的\ \verb+=+ 替换。
 因此，如果以下行被压缩： 
 
 \begin{verbatim}
@@ -152,7 +152,7 @@ glace,glacer.V+z1:P1s:P3s:S1s:S3s:Y2s
 \bigskip 
 \noindent 
 
-一些有相同的语法和语义码的词条可以有不同的含义，比如单词\textit{poêle}，阳性可以指加热器或面纱，阴性可以指厨房用具。因此我们可以根据以下情况进行区分：
+一些有相同的语法和语义码的词条可以有不同的含义，比如单词\ \textit{poêle}，阳性可以指加热器或面纱，阴性可以指厨房用具。因此我们可以根据以下情况进行区分：
 
 
 
@@ -164,13 +164,13 @@ glace,glacer.V+z1:P1s:P3s:S1s:S3s:Y2s
 \texttt{poêle,.N+z1:ms/ voile, linceul; appareil de chauffage}
 
 \bigskip 
-\noindent 注意：在实践中，这种区分仅仅是字典输入增加的结果，如果我们根据下列方式合并输入条目，Unitex的各个程序也会得到相同的结果。
+\noindent 注意：在实践中，这种区分仅仅是字典输入增加的结果，如果我们根据下列方式合并输入条目，Unitex 的各个程序也会得到相同的结果。
 \bigskip
 \noindent
 \texttt{poêle,.N+z1:fs:ms}
 
 \bigskip 
-\noindent 因此这种情况下，是否要分别创建条目取决于字典创建者的偏好。。
+\noindent 因此这种情况下，是否要分别创建条目取决于字典创建者的偏好。
 
 
 \index{DELAF|)}\index{Dictionnaire!DELAF|)}
@@ -179,7 +179,7 @@ glace,glacer.V+z1:P1s:P3s:S1s:S3s:Y2s
 \label{section-DELAS-format}
 \index{DELAS}\index{Dictionnaire!DELAS}
 
-DELAS的格式非常类似于DELAF的。不同的是，只提到了规范的形式后的语法码或语义码。规范形式是用逗号分隔不同的代码。下面是一个例子：
+DELAS的格式非常类似于\ DELAF 的。不同的是，只提到了规范的形式后的语法码或语义码。规范形式是用逗号分隔不同的代码。下面是一个例子：
 
 
 \begin{verbatim}
@@ -193,7 +193,7 @@ cheval,N4+Anl
 \subsection{内容框}
 \index{Dictionnaire contenu}\index{Dictionnaire codes utilises}
 
-提供Unitex的词典包含了简单复合词的描述。这些描述显示每个条目的语法目录，可能的词形变化码和各种语义信息。下列表格提供用\ Unitex 提供使用的字典中的不同代码的概述。这些代码有几乎所有的语言相同的含义，甚至其中有一些适用于特定的语言 (\textit{i.e.} marque du neutre, etc.).
+提供\ Unitex 的词典包含了简单复合词的描述。这些描述显示每个条目的语法目录，可能的词形变化码和各种语义信息。下列表格提供用\ Unitex 提供使用的字典中的不同代码的概述。这些代码有几乎所有的语言相同的含义，甚至其中有一些适用于特定的语言\  (\textit{i.e.} marque du neutre, 等。).
 
 \begin{table}[!h]
 \index{\verb+A+}\index{\verb+ADV+}\index{\verb+CONJC+}\index{\verb+CONJS+}\index{\verb+DET+}
@@ -273,7 +273,7 @@ cheval,N4+Anl
 \end{table}
 
 %\bigskip
-\noindent 注：计时表的说明 ~\ref{tab-inflectiona-codes}对应的是法文。然而，大多数定义都可以在不同的词性（不定式，现在分词等）中找到。
+\noindent 注：计时表的说明\ ~\ref{tab-inflectiona-codes} 对应的是法文。然而，大多数定义都可以在不同的词性（不定式，现在分词等）中找到。
 
 
 \bigskip
@@ -395,7 +395,7 @@ SAV,Service Après-Vente.SIGLE
 
 \section{检查字典格式}
 \index{Dictionnaire!vérification} \index{Vérification du format d'un dictionnaire}
-当字典很大，就成了乏味的手工检查。 Unitex 包含程序 \verb+CheckDic+\index{Programmes externes!\verb+CheckDic+}
+当字典很大，就成了乏味的手工检查。 Unitex 包含程序\ \verb+CheckDic+\index{Programmes externes!\verb+CheckDic+}
 \index{\verb+CheckDic+} 它会自动检查和\ DELAFDELAS 字典。
 
 \bigskip
@@ -436,7 +436,7 @@ SAV,Service Après-Vente.SIGLE
 \begin{figure}[!p]
 \begin{center}
 \includegraphics[height=19.4cm]{resources/img/fig3-6.png}
-\caption{字典的自动验证\label{fig-dictionary-checking-results}}
+\caption{字典的自动验证\ \label{fig-dictionary-checking-results}}
 \end{center}
 \end{figure}
 
@@ -444,19 +444,19 @@ SAV,Service Après-Vente.SIGLE
 \section{排序}
 \index{Dictionnaire!tri}\index{Tri!d'un dictionnaire}
 
-Unitex 处理条目但是不为此排序。但是，如果是为了展示，它往往是最好的字典排序。排序操作有多种标准，首先是文本的语言不同，排序不同。因此泰语的字典是根据字母的不同顺序而排列，所以Unitex为泰语制定了排序方法 (见
+Unitex 处理条目但是不为此排序。但是，如果是为了展示，它往往是最好的字典排序。排序操作有多种标准，首先是文本的语言不同，排序不同。因此泰语的字典是根据字母的不同顺序而排列，所以Unitex为泰语制定了排序方法 (见\ 
  \ref{chap-external-programs}).
 
 \bigskip
-\noindent 对于欧洲语言，排序通常是根据字母顺序进行，但有一些不同。事实上，像法国的一些语言考虑某些字符等同。例如，字符之间的差异
-\verb+e+ 和 \texttt{é} 当比较词的时候会被忽略 \verb+manger+ 和
-\texttt{mangés}, 因为之前的字母 \verb+r+ 和 \verb+s+ 用于决定顺序。不同的是当前一个字母是相同的时，如我们比较 \texttt{pêche} 和 \texttt{pèche}.
+\noindent 对于欧洲语言，排序通常是根据字母顺序进行，但有一些不同。事实上，像法国的一些语言考虑某些字符等同。例如，字符之间的差异\ 
+\verb+e+ 和\ \texttt{é} 当比较词的时候会被忽略\ \verb+manger+ 和\ 
+\texttt{mangés}, 因为之前的字母\ \verb+r+ 和\ \verb+s+ 用于决定顺序。不同的是当前一个字母是相同的时，如我们比较\ \texttt{pêche} 和\ \texttt{pèche}.
 
 \bigskip \index{Alphabet!tri}
 \noindent
 为了处理这一现象，分拣程序\  \verb+SortTxt+  
 \index{\verb+SortTxt+}\index{Programmes externes!\verb+SortTxt+} 使用了定义等价字符的文件。 \index{Équivalence de caractères}  该文件名为
-\verb+Alphabet_sort.txt+ \index{Fichier!\verb+Alphabet_sort.txt+}  并可以当前用户语言的目录中找到。默认情况下使用文件的首行，以下是法语的例子：
+\ \verb+Alphabet_sort.txt+ \index{Fichier!\verb+Alphabet_sort.txt+}  并可以当前用户语言的目录中找到。默认情况下使用文件的首行，以下是法语的例子：
 
 
 \bigskip
@@ -488,7 +488,7 @@ Unitex 处理条目但是不为此排序。但是，如果是为了展示，它�
 
 \bigskip
 \noindent 注：应用字典上的一个文本文件后
-\verb+dlf+, \verb+dlc+ 和 \verb+err+ 有了这个程序会自动排序。
+\verb+dlf+, \verb+dlc+ 和\ \verb+err+ 有了这个程序会自动排序。
 \index{Fichier!\verb+dlf+} \index{Fichier!\verb+dlc+}\index{Fichier!\verb+err+}
 
 
@@ -570,7 +570,7 @@ radix,N4
 \item \verb+C+ (copy) 通过移动所有其右侧的字母，来重复条目中的字母，
   	  
 例如，假设你想自动生成形容词
-\verb+able+如 \verb+regrettable+ 或 \verb+réquisitionnable+,
+\ \verb+able+ 如\ \verb+regrettable+ 或\ \verb+réquisitionnable+,
  还有最后的辅音字母名增加了一倍。避免编写一个偏转曲线图对于每个可能的最终辅音，可以使用\ C 操作者重复任何种类的末端辅音;
   
   \item \verb+D+ (delete) 通过移动所有其右侧的字母来删除词条中的字母。例如从词形变化的罗马字\  \verb+european+ 到 \verb+europeni+, 我们用\ \verb+LDRi+，  \verb+L+ 来确定字符\ \verb+a+, \verb+D+ 删除 \verb+a+, 在左边定义 \verb+n+, 随后 \verb+Ri+ 将代替 \verb+n+ 并加入\verb+i+。
@@ -645,7 +645,7 @@ reprendre & <re{\pounds}> & {\pounds} = prendre & re\\
 \end{center}
 \end{figure}
 
-\noindent 在一些语言中，某些词形变化包含在添加在词根之前的前缀。这是形成过去分词时的情况。同时使用操作器 \verb+£+ 和 \verb+$+ 对德语 \ \verb+sprechen+ (parler) 进行词形变化
+\noindent 在一些语言中，某些词形变化包含在添加在词根之前的前缀。这是形成过去分词时的情况。同时使用操作器\ \verb+£+ 和\ \verb+$+ 对德语 \ \verb+sprechen+ (parler) 进行词形变化
 如图所示现在分词和过去分词\ ~\ref{fig-inflection-sprechen}。
 
 \newpage
@@ -666,7 +666,7 @@ reprendre & <re{\pounds}> & {\pounds} = prendre & re\\
 \end{center}
 \end{figure}
 
-\noindent 如果一个人想用动词短语可以使用两种类型的变量 \$.
+\noindent 如果一个人想用动词短语可以使用两种类型的变量\ \$.
 图\ ~\ref{fig-inflection-aussprechen} 表示所对应的变量图\ \verb+$1+ et \verb+$2+。
 
 \bigskip
@@ -707,7 +707,7 @@ Voir chapitre \ref{chap-multiflex}.
 像阿拉伯语和伯来语这样的闪语族语言的词形变化无法简单地用以上所描述的运算符来表示。它们的词法遵循另一种逻辑：单词根据辅音结构进行词形变化。
 
 \bigskip
-\noindent 首先，我们只编译DELAS字典词根去=区的辅音语法码前的符号\ $ 表明词形变化语法在闪语族模式，ktb 为辅音结构（我们可以在词根区找到）。图\ ~\ref{semitic-grammar} 展示了语法\ \verb+V31-123.grf+ 在语义模式下的运作。词形变化语法使用了阿拉伯写作使用的音译系统。
+\noindent 首先，我们只编译\ DELAS 字典词根去=区的辅音语法码前的符号\ $ 表明词形变化语法在闪语族模式，ktb  为辅音结构（我们可以在词根区找到）。图\ ~\ref{semitic-grammar} 展示了语法\ \verb+V31-123.grf+ 在语义模式下的运作。词形变化语法使用了阿拉伯写作使用的音译系统。
 
 \bigskip
 \noindent \verb+ktb,$V31-123+
@@ -716,7 +716,7 @@ Voir chapitre \ref{chap-multiflex}.
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=10cm]{resources/img/fig3-15.png}
-\caption{闪语族模式遵循以下规则\label{semitic-grammar}}
+\caption{闪语族模式遵循以下规则\ \label{semitic-grammar}}
 \end{center}
 \end{figure}
 
@@ -725,7 +725,7 @@ Voir chapitre \ref{chap-multiflex}.
 \begin{enumerate}
 \item 可以使用所有词形变化标准运算符（） (\verb+L+, \verb+R+, etc.).
 \item 一个数字表示词根区的一个字母。(\verb+1+ 第一个
-\verb+2+ 第二个，等)。在我们的例子中， \verb+1+, \verb+2+ 和\ \verb+3+ 分别代表 \ \verb+k+, \verb+t+ 和\  \verb+b+. 如果你想第九个后指定一个字母，则它必须保留其号码： \verb+<10>+。
+\ \verb+2+ 第二个，等)。在我们的例子中， \verb+1+, \verb+2+ 和\ \verb+3+ 分别代表 \ \verb+k+, \verb+t+ 和\  \verb+b+. 如果你想第九个后指定一个字母，则它必须保留其号码： \verb+<10>+。
 \end{enumerate}  
 
 \bigskip
@@ -766,14 +766,9 @@ Unitex 将压缩字典应用于文本。压缩可以削减字典大小并加速�
 
 \index{Automate!minimal}
 \noindent
-\verb+mon_dico.bin+ 中的最小自动机可以表示变化词形，前缀和后缀是选择性添加。例如词语\verb+me+, \verb+te+, \verb+se+,
+\verb+mon_dico.bin+ 中的最小自动机可以表示变化词形，前缀和后缀是选择性添加。例如词语\ \verb+me+, \verb+te+, \verb+se+,
 \verb+ma+, \verb+ta+ 和\ \verb+sa+ 的最小自动机。如图\ ~\ref{fig-example-minimal-automaton} 所示。
 
-
-
-
-最低自动含量 \verb+mon_dico.bin+ 是的，所有的常用的前缀和后缀的因素屈折形式的表示。例如，最小自动机字 \verb+me+, \verb+te+, \verb+se+,
-\verb+ma+, \verb+ta+ et \verb+sa+可以通过图1的曲线图表示~\ref{fig-example-minimal-automaton}.
 \bigskip \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5cm]{resources/img/fig3-10.png}
@@ -782,7 +777,7 @@ Unitex 将压缩字典应用于文本。压缩可以削减字典大小并加速�
 \end{figure}
 
 \noindent 要压缩字典，打开它，然后单击“压缩到FST”中的“DELA”菜单。压缩是独立于语言和字典的内容。由程序产生的消息显示在不自动关闭一个窗口。您可以看到文件
-\verb+.bin+ 的大小, 读取的行数和产生的词形变化的数量。图 ~\ref{fig-compression-result} 显示了压缩一个单词字典的结果。
+\verb+.bin+ 的大小, 读取的行数和产生的词形变化的数量。图、 ~\ref{fig-compression-result} 显示了压缩一个单词字典的结果。
 
 \bigskip
 \begin{figure}[!h]
@@ -877,54 +872,54 @@ Unitex 可以处理压缩字典(\verb+.bin+) 或图形字典 (\verb+.fst2+)。�
 \end{figure}
 
 \bigskip
-\noindent 图表\ref{elements} 为一个可以识别元素符号的字典图。从这个图中我们可以看到压缩字典的首要优势：引号的使用可以强制字典遵循大小写规律。另外，这个字典图能很好的识别\ F 而不是\　FE　。我们惯用的
-示出了识别化学符号的曲线图。我们可以在这个图中看到的第一个优势压缩字典：使用引号来强制区分大小写。因此，该曲线图将认识到许多 \verb+Fe+
-除了 \verb+FE+, 而这是不可能的，以指定在一个常规DELAF这种禁止。
-
+\noindent 图表\ref{elements} 为一个可以识别元素符号的字典图。从这个图中我们可以看到压缩字典的首要优势：引号的使用可以强制字典遵循大小写规律。另外，这个字典图能很好的识别\ F 而不是\　FE　。我们惯用的\ DELAF 字典是无法做到这种识别的。
 \bigskip
-\noindent 图的词典的第二个优点是，他们可以利用从预先施加的词典的结果。因此，我们可以使用一般的字典，然后将其标记为专有名称未知单词大写与图 \verb$NPr+$ ~\ref{graph-NPr}.  \verb$+$ 图中的名称，给它一个低优先级，以便它一般字典之后施加。为了工作，该图是基于仍然通过一般的字典后未知的话。钩对应于定义上下文 (见 \ref{section-contexts}).
+\noindent 图标字典的第二个优势是它们可以扩展之前应用的字典获得的结果，因此，我们可以先应用普通字典，接着我们通过图形字典中\ \verb$NPr+$ ~\ref{graph-NPr} 将大写开头的未知词标注为专有名词。图中\ \verb$+$ 表示较低优先权，因此它将应用于普通字典后。这个图标字典应用于普通字典无法识别的词。中括号对应一个上下文定义。(见\  \ref{section-contexts})。
+
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=10.5cm]{resources/img/fig3-13.png}
-\caption{字典图形标识作为专名未登录词大写
+\caption{字典图标识由大写字母开头的未知专有名词}
 \label{graph-NPr}}
 \end{center}
 \end{figure}
 
 \bigskip
-\noindent 作为图-字典由发动机程序装入 \verb+Locate+,
-他们可以使用任何程序 \verb+Locate+ 授权。尤其是，它有可能使用的形态滤波器\index{Filtre morphologique} (见~\ref{section-filters}) 和大写模式 (见~\ref{section-morphological-mode}).\index{Mode
-morphologique}
-因此，图的曲线图中 \ref{graph-CR} 使用过滤器数罗马数字。注意，它也使用上下文来避免，例如，随后当由撇号即 \verb+C+ 被取为罗马数字。
+\noindent 
+由于图标字典被\ \verb+Locate+ 程序引擎所应用，它们使用\ \verb+Locate+ 程序许可范围内的所有内容。具体来说，它们可以使用词形过滤器\ \index{Filtre morphologique} (见\ ~\ref{section-filters}) 和词形模式 (见\ ~\ref{section-morphological-mode})。图\ \ref{graph-CR}  所示字典图形使用了过滤器识别罗马数字。需要注意的是，它使用上下文避免一些错误发生，比如\ \verb+C+ 后如果有撇号，它不会被识别为罗马数字。
+
+
 
 \begin{figure}[!p]
 \begin{center}
 \includegraphics[height=24cm]{resources/img/fig3-14.png}
-\caption{图词典承认罗马数字\label{graph-CR}}
+\caption{字典图识别罗马数字\label{graph-CR}}
 \end{center}
 \end{figure}
 
 \bigskip
-\noindent 默认情况下，图表，词典在MERGE模式应用。它可以应用它们在REPLACE模式，增加了它们的后缀名 \verb+-r+. 这结合了优先 \verb-+- 和 \verb+-+:
+\noindent 
+图标字典默认使用\ MERGE 模式。它也可以使用\ replace 模式，只需要在名字前加上前缀\ \verb+-r+。也可以加上优先权符号\  \verb-+- 和\ \verb+-+。
+
 
 \bigskip
 \verb?bagpipe-r.fst2  McAdam-r-.fst2  phtirius-r+.fst2?
 
 
-\subsubsection{作为形态模式产生的字典词条出口}
+\subsubsection{导出词形模式字典条目}
 \index{Dictionnaire!du mode morphologique}
-用字典生成的图形条目由程序咨询 \verb+Locate+ 当遇见那些需要咨询的字典词汇口罩。
+图形字生成的条目是通过\ \verb+Locate+ 程序完成的，当程序遇到词汇面罩时，我们需要字典帮助。
 
 \bigskip
-\noindent 但是，此功能受到限制时，词法面膜形态方法
-(见~\ref{section-morphological-mode}). 你不能声明形态字典模式像往常一样的字典形图 (见~\ref{dic-mode-morpho}),
-因为不是一个文件 \verb+.bin+. 在形态模式中，需要咨询字典词汇，面具不会触发字典。作为补偿，有几种解决方案。
+\noindent然而，这个功能在词汇面罩为词形模式时会受到限制。(见\ ~\ref{section-morphological-mode})我们不能以使用常用的方法混淆图形字典和词形模式。当字典处于词形模式时，词汇面罩需要参考普通词典而不是图形词典。我们有以下几种解决方法：
+
+
 \begin{itemize}
 \item 可以考虑从在形态模式图的一部分调用图的字典。
-\item Unitex内部生产的公认形式的字典由图形词典中的文本。如果字典图的名称中包含\verb+b+（见命名约定如下图），这本词典是自动生成隐含形态字典模式中，因此，它被咨询的程序时，\verb+Locate+找到符合词法的形态模式。但这种方法只适用于由图的字典词典的初始应用程序识别表格 (见~\ref{section-applying-dictionaries}),而不能应用于那些出现在文本作为标记的部件。
+\item Unitex内部生产的公认形式的字典由图形词典中的文本。如果字典图的名称中包含\ \verb+b+（见命名约定如下图），这本词典是自动生成隐含形态字典模式中，因此，它被咨询的程序时，\verb+Locate+找到符合词法的形态模式。但这种方法只适用于由图的字典词典的初始应用程序识别表格 (见\ ~\ref{section-applying-dictionaries}),而不能应用于那些出现在文本作为标记的部件。
 \end{itemize}
-如果我们添加 \verb+z+ 替代  \verb+b+, 文本内部生产字典立即压缩，当其他图形，字典是应用之后，可以协商。
+如果我们添加 \ \verb+z+ 替代 \ \verb+b+, 文本内部生产字典立即压缩，当其他图形，字典是应用之后，可以协商。
  
 \subsubsection{命名约定}
 一个图的字典的命名过程如下:\\
@@ -933,21 +928,21 @@ morphologique}
 
 \noindent où:
 \begin{itemize}
-\item \verb+X+ 取一个值 \verb+[rRmM]+: \verb+r+ REPLACE模式; \verb+M+
+\item \verb+X+ 取一个值 \ \verb+[rRmM]+: \verb+r+ REPLACE 模式; \verb+M+
 MERGE模式(默认模式);
-\item \verb+Y+ 取一个值 \verb+[bBzZ]+: 选项支配形态字典模式建设（见上文）;
-\item \verb+Z+ 取一个值 \verb+[aAlLsS]+: \verb+a+ 意味着该图是在“所有匹配”施加;\verb+l+模式"Longest matches" (默认模式); 
+\item \verb+Y+ 取一个值 \ \verb+[bBzZ]+: 选项支配形态字典模式建设（见上文）;
+\item \verb+Z+ 取一个值\ \verb+[aAlLsS]+: \verb+a+ 意味着该图是在“所有匹配”施加;\verb+l+ 模式"Longest matches" (默认模式); 
 \verb+s+ 表示 "Shortest matches".
 \end{itemize}
 
 
 \subsection{形态图词典}
 \label{section-morphological-dictionary-graphs}\index{Graphe-dictionnaire!morphologique}
-在图形词典中，每个路径必须，默认情况下，产生对包含在字典文本词汇条目。在一个形态字典的图，每个路径必须提供分隔的一个或多个标签的序列由括号和符合DELAF的语法
- (见~\ref{section-DELAF-entry-syntax}).
+在图形词典中，每个路径必须，默认情况下，产生对包含在字典文本词汇条目。在一个形态字典的图，每个路径必须提供分隔的一个或多个标签的序列由括号和符合\ DELAF 的语法
+ (见\ ~\ref{section-DELAF-entry-syntax}).
 你的图表的输出将被用作输入来构造文本自动机。我们称之为``形态图形，字典'，因为他们的主要目的是提供新的形态在文本自动分析，通过形态学方法
-(见 \ref{section-morphological-mode}).此功能对于凝集语言如韩语很有用。
-要使用图形作为图形的形态字典，我们以斜杠声明它 (/) 作为其释放的第一个字符，如图 \ref{morphoA}.
+(见 \ \ref{section-morphological-mode}).此功能对于凝集语言如韩语很有用。
+要使用图形作为图形的形态字典，我们以斜杠声明它 (/) 作为其释放的第一个字符，如图\ \ref{morphoA}.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -956,23 +951,22 @@ MERGE模式(默认模式);
 \end{center}
 \end{figure}
 
-\noindent 规则很简单：任何输出字典图形开始以斜杠 ( /) 
-加入文件 \verb+tags.ind+, \index{\verb+tags.ind+}，在索引中定位。
-该文件所使用的程序 \verb+Txt2Fst2+ afin d'ajouter des interprétations à
-l'automate du texte. La grammaire de la figure \ref{morphoA} 要解释添加到文本自动机。图的语法文字识别
-由前缀 \verb+un+ 加上形容词构成。 如果应用为图的字典获得在文本自动机的新路径，如图
-\ref{morphoB}. 注意，当在同样，它们之间的链路由虚线显示两个标签匹配分析。
+\noindent 规则很简单：任何输出字典图形以斜杠 ( /) 开始
+加入文件\ \verb+tags.ind+, \index{\verb+tags.ind+}，在索引中定位。
+该文件所使用的程序要解释添加到文本自动机。图的语法文字识别
+由前缀 \ \verb+un+ 加上形容词构成。 如果应用为图的字典获得在文本自动机的新路径，如图\
+\ref{morphoB}> 注意，当在同样，它们之间的链路由虚线显示两个标签匹配分析。
 
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=15cm]{resources/img/fig3-14b.png}
-\caption{由图的形态字典方式加入\label{morphoB}}
+\caption{由图的形态字典方式加入\ \label{morphoB}}
 \end{center}
 \end{figure}
 
 \section{参考书目}
 
-该表~\ref{ref-dicos}提供了简单和复合词电子词典提供一些参考。有关详细信息，请参阅Unitex网站上的参考页： \url{http://www-igm.univ-mlv.fr/~unitex}
+该表~\ref{ref-dicos}提供了简单和复合词电子词典的一些参考。有关详细信息，请参阅\ Unitex 网站上的参考页： \url{http://www-igm.univ-mlv.fr/~unitex}
 
 \bigskip
 \begin{table}[!h]
